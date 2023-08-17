@@ -9,4 +9,5 @@ A：借用commander这个库，npm install commander下载，在index.js里导�
 
 3.Q：如何把程序上传到npm.org上面
 A：先npm login依次填写username、password、email，登录之后，可以在package.json里填写keywords关键词用于在npm.org
-里搜索索引，license开源协议
+里搜索索引，license开源协议,homepage显示网站首页，没有则填git地址，repository仓库代码写的是git地址,type属性是指用什么
+版本工具进行管理，然后npm publish直接发布

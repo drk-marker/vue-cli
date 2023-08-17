@@ -16,6 +16,11 @@
   ],
   "author": "coderkai",
   "license": "MIT",
+  "homepage": "git@github.com:drk-marker/vue-cli.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:drk-marker/vue-cli.git"
+  },
   "dependencies": {
     "commander": "^11.0.0",
     "download-git-repo": "^3.0.2",
