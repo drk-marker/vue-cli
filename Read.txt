@@ -1,0 +1,12 @@
+1.Q：如何在终端输入指令why后执行index.js文件里的代码
+A：index.js文件里的第一行#!/usr/bin/env node这句话的意思是在当前电脑环境里找到node，去执行该
+index.js文件，然后在package.json文件里配置"bin": {"why": "index.js"},然后终端输入npm link这样会
+把why这个指令加入到环境变量中，此时why便可启动node执行index.js
+
+2.Q: 如何实现why --version,why -v,why --help等指令的显示
+A：借用commander这个库，npm install commander下载，在index.js里导入const program = require("commander");
+进行配置
+
+3.Q：如何把程序上传到npm.org上面
+A：先npm login依次填写username、password、email，登录之后，可以在package.json里填写keywords关键词用于在npm.org
+里搜索索引，license开源协议
