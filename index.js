@@ -4,7 +4,7 @@ const program = require("commander");
 const helpOptions = require("./lib/core/help.js");
 const createCommands = require("./lib/core/create.js");
 // 查看版本号
-program.version(require("./package-lock.json").version);
+program.version(require("./package.json").version);
 
 // 帮助和选项
 helpOptions();
